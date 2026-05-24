@@ -1,0 +1,53 @@
+# Axolotl configuration for fine-tuning Qwen2.5-Coder-0.5B
+# This is an alternative to the Python training script
+
+base_model: Qwen/Qwen2.5-Coder-0.5B-Instruct
+model_type: AutoModelForCausalLM
+tokenizer_type: AutoTokenizer
+
+# Model loading
+load_in_4bit: true
+adapter: lora
+
+# LoRA settings
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_linear: true
+lora_fan_in_fan_out: false
+
+# Dataset configuration
+datasets:
+  - path: data/sample_data.jsonl
+    type: alpaca
+    # Alternative formats:
+    # type: completion
+    # type: chat_template
+
+# Training settings
+num_epochs: 3
+micro_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 0.0002
+max_seq_length: 2048
+
+# Optimizer
+optimizer: adamw_bnb_8bit
+lr_scheduler: cosine
+warmup_steps: 10
+
+# Logging
+logging_steps: 1
+save_strategy: epoch
+save_total_limit: 2
+
+# Output
+output_dir: ./outputs/axolotl-finetune
+
+# Memory optimization
+gradient_checkpointing: true
+flash_attention: false  # Set to true if you have flash-attn installed
+
+# Optional: Push to Hugging Face Hub
+# hub_model_id: your-username/portuguese-coder-0.5b
+# hub_strategy: every_save
