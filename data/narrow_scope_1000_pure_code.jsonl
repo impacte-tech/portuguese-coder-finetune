@@ -1,0 +1,828 @@
+{"instruction": "Verifique se elemento existe em hash map (contexto: contagem)", "input": "hash_map = {'a': 1, 'b': 2}, chave = 'a'", "output": "existe = chave in hash_map"}
+{"instruction": "Verifique se elemento existe em hash map (contexto: mapeamento)", "input": "hash_map = {'a': 1, 'b': 2}, chave = 'a'", "output": "existe = chave in hash_map"}
+{"instruction": "Verifique se elemento existe em hash map (contexto: cache)", "input": "hash_map = {'a': 1, 'b': 2}, chave = 'a'", "output": "existe = chave in hash_map"}
+{"instruction": "Verifique se elemento existe em hash map (contexto: indice)", "input": "hash_map = {'a': 1, 'b': 2}, chave = 'a'", "output": "existe = chave in hash_map"}
+{"instruction": "Obtenha valor de hash map com valor padrao (contexto: contagem)", "input": "hash_map = {'a': 1, 'b': 2}, chave = 'a', padrao = 0", "output": "valor = hash_map.get(chave, padrao)"}
+{"instruction": "Obtenha valor de hash map com valor padrao (contexto: mapeamento)", "input": "hash_map = {'a': 1, 'b': 2}, chave = 'a', padrao = 0", "output": "valor = hash_map.get(chave, padrao)"}
+{"instruction": "Obtenha valor de hash map com valor padrao (contexto: cache)", "input": "hash_map = {'a': 1, 'b': 2}, chave = 'a', padrao = 0", "output": "valor = hash_map.get(chave, padrao)"}
+{"instruction": "Obtenha valor de hash map com valor padrao (contexto: indice)", "input": "hash_map = {'a': 1, 'b': 2}, chave = 'a', padrao = 0", "output": "valor = hash_map.get(chave, padrao)"}
+{"instruction": "Atualize contagem em hash map (contexto: contagem)", "input": "hash_map = {}, chave = 'a'", "output": "hash_map[chave] = hash_map.get(chave, 0) + 1"}
+{"instruction": "Atualize contagem em hash map (contexto: mapeamento)", "input": "hash_map = {}, chave = 'a'", "output": "hash_map[chave] = hash_map.get(chave, 0) + 1"}
+{"instruction": "Atualize contagem em hash map (contexto: cache)", "input": "hash_map = {}, chave = 'a'", "output": "hash_map[chave] = hash_map.get(chave, 0) + 1"}
+{"instruction": "Atualize contagem em hash map (contexto: indice)", "input": "hash_map = {}, chave = 'a'", "output": "hash_map[chave] = hash_map.get(chave, 0) + 1"}
+{"instruction": "Delete chave de hash map (contexto: contagem)", "input": "hash_map = {'a': 1, 'b': 2}, chave = 'a'", "output": "del hash_map[chave]"}
+{"instruction": "Delete chave de hash map (contexto: mapeamento)", "input": "hash_map = {'a': 1, 'b': 2}, chave = 'a'", "output": "del hash_map[chave]"}
+{"instruction": "Delete chave de hash map (contexto: cache)", "input": "hash_map = {'a': 1, 'b': 2}, chave = 'a'", "output": "del hash_map[chave]"}
+{"instruction": "Delete chave de hash map (contexto: indice)", "input": "hash_map = {'a': 1, 'b': 2}, chave = 'a'", "output": "del hash_map[chave]"}
+{"instruction": "Verifique se hash map esta vazio (contexto: contagem)", "input": "hash_map = {}", "output": "vazio = len(hash_map) == 0"}
+{"instruction": "Verifique se hash map esta vazio (contexto: mapeamento)", "input": "hash_map = {}", "output": "vazio = len(hash_map) == 0"}
+{"instruction": "Verifique se hash map esta vazio (contexto: cache)", "input": "hash_map = {}", "output": "vazio = len(hash_map) == 0"}
+{"instruction": "Verifique se hash map esta vazio (contexto: indice)", "input": "hash_map = {}", "output": "vazio = len(hash_map) == 0"}
+{"instruction": "Itere sobre chaves do hash map", "input": "hash_map = {'a': 1, 'b': 2}", "output": "for chave in hash_map:\n    print(chave)"}
+{"instruction": "Itere sobre valores do hash map", "input": "hash_map = {'a': 1, 'b': 2}", "output": "for valor in hash_map.values():\n    print(valor)"}
+{"instruction": "Itere sobre pares chave-valor", "input": "hash_map = {'a': 1, 'b': 2}", "output": "for chave, valor in hash_map.items():\n    print(chave, valor)"}
+{"instruction": "Conte frequencia de cada elemento (array de strings)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de objetos)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de objetos)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de strings)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de objetos)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de inteiros)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de objetos)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de tuplas)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de strings)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de inteiros)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de strings)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de tuplas)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de strings)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de tuplas)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de tuplas)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de tuplas)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de strings)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de inteiros)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de inteiros)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Conte frequencia de cada elemento (array de strings)", "input": "array = [1, 2, 2, 3, 3, 3]", "output": "from collections import Counter\nfreq = Counter(array)"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 1)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 2)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 3)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 4)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 5)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 6)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 7)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 8)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 9)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 10)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 11)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 12)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 13)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 14)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 15)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 16)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 17)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 18)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 19)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Encontre par que soma ao alvo usando hash map (variacao 20)", "input": "nums = [2, 7, 11, 15], alvo = 9", "output": "vistos = {}\nfor i, num in enumerate(nums):\n    complemento = alvo - num\n    if complemento in vistos:\n        print([vistos[complemento], i])\n    vistos[num] = i"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 1)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 2)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 3)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 4)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 5)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 6)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 7)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 8)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 9)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 10)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 11)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 12)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 13)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 14)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 15)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 16)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 17)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 18)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 19)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 20)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 21)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 22)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 23)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 24)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 25)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 26)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 27)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 28)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 29)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Incremente ponteiro esquerdo (variacao 30)", "input": "esq = 0, dir = 10", "output": "esq += 1"}
+{"instruction": "Decremente ponteiro direito (variacao 1)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 2)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 3)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 4)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 5)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 6)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 7)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 8)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 9)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 10)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 11)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 12)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 13)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 14)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 15)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 16)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 17)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 18)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 19)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 20)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 21)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 22)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 23)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 24)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 25)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 26)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 27)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 28)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 29)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Decremente ponteiro direito (variacao 30)", "input": "esq = 0, dir = 10", "output": "dir -= 1"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 1)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 2)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 3)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 4)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 5)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 6)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 7)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 8)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 9)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 10)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 11)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 12)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 13)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 14)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 15)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 16)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 17)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 18)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 19)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 20)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 21)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 22)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 23)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 24)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 25)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 26)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 27)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 28)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 29)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Compare elementos nos dois ponteiros (variacao 30)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4", "output": "if arr[esq] == arr[dir]:\n    print(\"iguais\")"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 1)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 2)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 3)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 4)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 5)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 6)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 7)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 8)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 9)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 10)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 11)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 12)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 13)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 14)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 15)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 16)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 17)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 18)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 19)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 20)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 21)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 22)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 23)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 24)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 25)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 26)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 27)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 28)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 29)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Soma elementos dos dois ponteiros (variacao 30)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, dir = 4, alvo = 9", "output": "soma = arr[esq] + arr[dir]\nif soma < alvo:\n    esq += 1\nelse:\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 1)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 2)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 3)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 4)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 5)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 6)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 7)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 8)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 9)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 10)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 11)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 12)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 13)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 14)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 15)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 16)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 17)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 18)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 19)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 20)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 21)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 22)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 23)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 24)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 25)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 26)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 27)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 28)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 29)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Inverta array no lugar usando dois ponteiros (variacao 30)", "input": "arr = [1, 2, 3, 4, 5]", "output": "esq, dir = 0, len(arr) - 1\nwhile esq < dir:\n    arr[esq], arr[dir] = arr[dir], arr[esq]\n    esq += 1\n    dir -= 1"}
+{"instruction": "Adicione elemento na janela (variacao 1)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 2)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 3)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 4)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 5)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 6)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 7)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 8)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 9)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 10)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 11)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 12)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 13)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 14)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 15)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 16)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 17)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 18)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 19)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 20)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 21)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 22)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 23)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 24)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Adicione elemento na janela (variacao 25)", "input": "arr = [1, 2, 3, 4, 5], dir = 0, soma = 0", "output": "soma += arr[dir]\ndir += 1"}
+{"instruction": "Remova elemento da janela (variacao 1)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 2)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 3)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 4)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 5)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 6)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 7)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 8)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 9)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 10)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 11)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 12)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 13)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 14)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 15)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 16)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 17)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 18)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 19)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 20)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 21)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 22)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 23)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 24)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Remova elemento da janela (variacao 25)", "input": "arr = [1, 2, 3, 4, 5], esq = 0, soma = 10", "output": "soma -= arr[esq]\nesq += 1"}
+{"instruction": "Mova janela um passo (variacao 1)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 2)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 3)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 4)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 5)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 6)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 7)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 8)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 9)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 10)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 11)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 12)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 13)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 14)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 15)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 16)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 17)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 18)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 19)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 20)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 21)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 22)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 23)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 24)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Mova janela um passo (variacao 25)", "input": "arr = [1, 2, 3, 4, 5], i = 4, k = 3, soma = 6", "output": "soma = soma - arr[i - k] + arr[i]"}
+{"instruction": "Verifique tamanho da janela (variacao 1)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 2)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 3)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 4)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 5)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 6)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 7)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 8)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 9)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 10)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 11)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 12)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 13)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 14)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 15)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 16)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 17)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 18)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 19)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 20)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 21)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 22)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 23)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 24)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Verifique tamanho da janela (variacao 25)", "input": "esq = 0, dir = 3, k = 4", "output": "tamanho = dir - esq + 1\nif tamanho == k:\n    print(\"janela cheia\")"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 1)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 2)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 3)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 4)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 5)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 6)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 7)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 8)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 9)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 10)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 11)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 12)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 13)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 14)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 15)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 16)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 17)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 18)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 19)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 20)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 21)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 22)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 23)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 24)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Encontre maxima soma de subarray de tamanho k (variacao 25)", "input": "arr = [1, 4, 2, 10, 23], k = 3", "output": "soma = sum(arr[:k])\nmax_soma = soma\nfor i in range(k, len(arr)):\n    soma += arr[i] - arr[i - k]\n    max_soma = max(max_soma, soma)\nprint(max_soma)"}
+{"instruction": "Calcule indice do meio (variacao 1)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 2)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 3)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 4)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 5)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 6)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 7)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 8)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 9)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 10)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 11)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 12)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 13)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 14)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 15)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 16)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 17)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 18)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 19)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule indice do meio (variacao 20)", "input": "esq = 0, dir = 10", "output": "meio = (esq + dir) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 1)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 2)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 3)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 4)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 5)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 6)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 7)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 8)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 9)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 10)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 11)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 12)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 13)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 14)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 15)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 16)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 17)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 18)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 19)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Calcule meio sem overflow (variacao 20)", "input": "esq = 0, dir = 2147483647", "output": "meio = esq + (dir - esq) // 2"}
+{"instruction": "Compare com elemento do meio e mova (variacao 1)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 2)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 3)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 4)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 5)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 6)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 7)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 8)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 9)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 10)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 11)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 12)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 13)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 14)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 15)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 16)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 17)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 18)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 19)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Compare com elemento do meio e mova (variacao 20)", "input": "arr = [1, 3, 5, 7, 9], alvo = 5, esq = 0, dir = 4", "output": "meio = (esq + dir) // 2\nif arr[meio] == alvo:\n    print(meio)\nelif arr[meio] < alvo:\n    esq = meio + 1\nelse:\n    dir = meio - 1"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 1)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 2)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 3)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 4)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 5)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 6)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 7)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 8)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 9)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 10)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 11)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 12)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 13)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 14)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 15)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 16)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 17)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 18)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 19)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre lower bound (primeira ocorrencia) (variacao 20)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] < alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 1)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 2)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 3)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 4)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 5)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 6)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 7)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 8)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 9)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 10)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 11)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 12)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 13)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 14)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 15)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 16)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 17)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 18)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 19)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Encontre upper bound (ultima ocorrencia) (variacao 20)", "input": "arr = [1, 2, 2, 2, 3], alvo = 2", "output": "esq, dir = 0, len(arr)\nwhile esq < dir:\n    meio = (esq + dir) // 2\n    if arr[meio] <= alvo:\n        esq = meio + 1\n    else:\n        dir = meio\nprint(esq - 1)"}
+{"instruction": "Empilhe elemento (variacao 1)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Empilhe elemento (variacao 2)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Empilhe elemento (variacao 3)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Empilhe elemento (variacao 4)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Empilhe elemento (variacao 5)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Empilhe elemento (variacao 6)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Empilhe elemento (variacao 7)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Empilhe elemento (variacao 8)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Empilhe elemento (variacao 9)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Empilhe elemento (variacao 10)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Empilhe elemento (variacao 11)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Empilhe elemento (variacao 12)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Empilhe elemento (variacao 13)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Empilhe elemento (variacao 14)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Empilhe elemento (variacao 15)", "input": "pilha = [], elemento = 5", "output": "pilha.append(elemento)"}
+{"instruction": "Desempilhe elemento (variacao 1)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Desempilhe elemento (variacao 2)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Desempilhe elemento (variacao 3)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Desempilhe elemento (variacao 4)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Desempilhe elemento (variacao 5)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Desempilhe elemento (variacao 6)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Desempilhe elemento (variacao 7)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Desempilhe elemento (variacao 8)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Desempilhe elemento (variacao 9)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Desempilhe elemento (variacao 10)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Desempilhe elemento (variacao 11)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Desempilhe elemento (variacao 12)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Desempilhe elemento (variacao 13)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Desempilhe elemento (variacao 14)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Desempilhe elemento (variacao 15)", "input": "pilha = [1, 2, 3]", "output": "elemento = pilha.pop()"}
+{"instruction": "Olhe topo da pilha (variacao 1)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Olhe topo da pilha (variacao 2)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Olhe topo da pilha (variacao 3)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Olhe topo da pilha (variacao 4)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Olhe topo da pilha (variacao 5)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Olhe topo da pilha (variacao 6)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Olhe topo da pilha (variacao 7)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Olhe topo da pilha (variacao 8)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Olhe topo da pilha (variacao 9)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Olhe topo da pilha (variacao 10)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Olhe topo da pilha (variacao 11)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Olhe topo da pilha (variacao 12)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Olhe topo da pilha (variacao 13)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Olhe topo da pilha (variacao 14)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Olhe topo da pilha (variacao 15)", "input": "pilha = [1, 2, 3]", "output": "topo = pilha[-1]"}
+{"instruction": "Verifique se pilha esta vazia (variacao 1)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Verifique se pilha esta vazia (variacao 2)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Verifique se pilha esta vazia (variacao 3)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Verifique se pilha esta vazia (variacao 4)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Verifique se pilha esta vazia (variacao 5)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Verifique se pilha esta vazia (variacao 6)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Verifique se pilha esta vazia (variacao 7)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Verifique se pilha esta vazia (variacao 8)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Verifique se pilha esta vazia (variacao 9)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Verifique se pilha esta vazia (variacao 10)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Verifique se pilha esta vazia (variacao 11)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Verifique se pilha esta vazia (variacao 12)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Verifique se pilha esta vazia (variacao 13)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Verifique se pilha esta vazia (variacao 14)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Verifique se pilha esta vazia (variacao 15)", "input": "pilha = []", "output": "vazia = len(pilha) == 0"}
+{"instruction": "Valide parenteses balanceados (variacao 1)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 2)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 3)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 4)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 5)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 6)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 7)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 8)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 9)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 10)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 11)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 12)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 13)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 14)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 15)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 16)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 17)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 18)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 19)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Valide parenteses balanceados (variacao 20)", "input": "s = \"()[]{}\"", "output": "pilha = []\npares = {')': '(', ']': '[', '}': '{'}\nfor char in s:\n    if char in '([{':\n        pilha.append(char)\n    elif char in ')]}':\n        if not pilha or pilha[-1] != pares[char]:\n            print(False)\n        pilha.pop()\nprint(len(pilha) == 0)"}
+{"instruction": "Defina caso base da recursao (variacao 1)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 2)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 3)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 4)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 5)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 6)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 7)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 8)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 9)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 10)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 11)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 12)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 13)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 14)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 15)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 16)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 17)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 18)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 19)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 20)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 21)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 22)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 23)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 24)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Defina caso base da recursao (variacao 25)", "input": "n = 5", "output": "if n <= 1:\n    return n"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 1)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 2)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 3)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 4)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 5)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 6)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 7)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 8)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 9)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 10)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 11)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 12)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 13)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 14)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 15)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 16)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 17)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 18)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 19)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 20)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 21)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 22)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 23)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 24)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Passo recursivo com chamada reduzida (variacao 25)", "input": "n = 5", "output": "return n * fatorial(n - 1)"}
+{"instruction": "Memoizacao em recursao (variacao 1)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 2)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 3)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 4)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 5)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 6)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 7)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 8)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 9)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 10)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 11)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 12)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 13)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 14)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 15)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 16)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 17)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 18)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 19)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 20)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 21)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 22)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 23)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 24)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Memoizacao em recursao (variacao 25)", "input": "n = 10, memo = {}", "output": "if n in memo:\n    return memo[n]\nmemo[n] = fib(n - 1) + fib(n - 2)\nreturn memo[n]"}
+{"instruction": "Recursao de cauda com acumulador (variacao 1)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 2)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 3)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 4)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 5)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 6)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 7)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 8)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 9)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 10)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 11)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 12)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 13)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 14)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 15)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 16)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 17)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 18)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 19)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 20)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 21)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 22)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 23)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 24)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Recursao de cauda com acumulador (variacao 25)", "input": "n = 5, acc = 1", "output": "if n == 0:\n    return acc\nreturn fatorial(n - 1, n * acc)"}
+{"instruction": "Visite no em DFS (variacao 1)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 2)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 3)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 4)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 5)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 6)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 7)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 8)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 9)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 10)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 11)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 12)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 13)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 14)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 15)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 16)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 17)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 18)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 19)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite no em DFS (variacao 20)", "input": "no = raiz", "output": "if no:\n    print(no.val)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 1)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 2)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 3)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 4)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 5)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 6)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 7)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 8)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 9)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 10)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 11)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 12)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 13)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 14)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 15)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 16)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 17)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 18)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 19)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho esquerdo em DFS (variacao 20)", "input": "no = raiz", "output": "if no.esquerda:\n    dfs(no.esquerda)"}
+{"instruction": "Visite filho direito em DFS (variacao 1)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 2)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 3)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 4)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 5)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 6)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 7)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 8)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 9)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 10)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 11)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 12)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 13)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 14)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 15)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 16)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 17)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 18)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 19)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Visite filho direito em DFS (variacao 20)", "input": "no = raiz", "output": "if no.direita:\n    dfs(no.direita)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 1)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 2)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 3)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 4)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 5)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 6)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 7)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 8)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 9)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 10)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 11)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 12)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 13)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 14)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 15)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 16)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 17)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 18)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 19)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 20)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 21)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 22)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 23)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 24)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "Percurso em ordem (in-order) (variacao 25)", "input": "raiz = no_arvore", "output": "def in_order(no):\n    if no:\n        in_order(no.esquerda)\n        print(no.val)\n        in_order(no.direita)\nin_order(raiz)"}
+{"instruction": "BFS em arvore (variacao 1)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 2)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 3)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 4)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 5)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 6)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 7)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 8)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 9)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 10)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 11)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 12)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 13)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 14)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 15)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 16)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 17)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 18)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 19)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 20)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 21)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 22)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 23)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 24)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "BFS em arvore (variacao 25)", "input": "raiz = no_arvore", "output": "from collections import deque\nfila = deque([raiz])\nwhile fila:\n    no = fila.popleft()\n    print(no.val)\n    if no.esquerda:\n        fila.append(no.esquerda)\n    if no.direita:\n        fila.append(no.direita)"}
+{"instruction": "Percorra lista ligada (variacao 1)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 2)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 3)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 4)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 5)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 6)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 7)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 8)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 9)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 10)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 11)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 12)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 13)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 14)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 15)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 16)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 17)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 18)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 19)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Percorra lista ligada (variacao 20)", "input": "cabeca = no_inicial", "output": "atual = cabeca\nwhile atual:\n    print(atual.val)\n    atual = atual.proximo"}
+{"instruction": "Inverta lista ligada (variacao 1)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 2)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 3)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 4)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 5)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 6)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 7)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 8)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 9)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 10)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 11)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 12)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 13)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 14)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 15)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 16)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 17)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 18)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 19)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Inverta lista ligada (variacao 20)", "input": "cabeca = no_inicial", "output": "anterior = None\natual = cabeca\nwhile atual:\n    proximo = atual.proximo\n    atual.proximo = anterior\n    anterior = atual\n    atual = proximo\ncabeca = anterior"}
+{"instruction": "Encontre meio da lista (variacao 1)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 2)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 3)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 4)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 5)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 6)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 7)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 8)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 9)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 10)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 11)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 12)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 13)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 14)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 15)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 16)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 17)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 18)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 19)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Encontre meio da lista (variacao 20)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\nprint(lento.val)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 1)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 2)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 3)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 4)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 5)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 6)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 7)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 8)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 9)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 10)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 11)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 12)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 13)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 14)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 15)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 16)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 17)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 18)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 19)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Detecte ciclo em lista ligada (variacao 20)", "input": "cabeca = no_inicial", "output": "lento = rapido = cabeca\nwhile rapido and rapido.proximo:\n    lento = lento.proximo\n    rapido = rapido.proximo.proximo\n    if lento == rapido:\n        print(True)\nprint(False)"}
+{"instruction": "Mescle duas listas ordenadas (variacao 1)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 2)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 3)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 4)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 5)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 6)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 7)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 8)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 9)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 10)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 11)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 12)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 13)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 14)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 15)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 16)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 17)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 18)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 19)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
+{"instruction": "Mescle duas listas ordenadas (variacao 20)", "input": "l1 = lista1, l2 = lista2", "output": "dummy = No(0)\natual = dummy\nwhile l1 and l2:\n    if l1.val <= l2.val:\n        atual.proximo = l1\n        l1 = l1.proximo\n    else:\n        atual.proximo = l2\n        l2 = l2.proximo\n    atual = atual.proximo\natual.proximo = l1 or l2"}
