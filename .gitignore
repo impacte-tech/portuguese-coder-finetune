@@ -36,6 +36,7 @@ data/*.jsonl
 !data/sample_data.jsonl
 !data/leetcode_portuguese_solutions.jsonl
 !data/stackoverflow_pt_python.jsonl
+!data/github_issues_brazilian.jsonl
 
 # Logs
 *.log
