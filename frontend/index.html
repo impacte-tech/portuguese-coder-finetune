@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portuguese Coder - Blind 75 Practice</title>
+    <script src="https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🇧🇷 Portuguese Coder</h1>
+            <p>Assistente de Código com Auto-Correção via Python REPL</p>
+            <div class="model-status">
+                <span id="model-status">⏳ Carregando modelo Qwen2.5-Coder 0.5B...</span>
+                <span id="pyodide-status">⏳ Carregando Python...</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- Left Panel: Question Selection -->
+            <aside class="sidebar">
+                <h2>🎯 Blind 75</h2>
+                <div class="filter-bar">
+                    <input type="text" id="search-input" placeholder="Buscar questão...">
+                    <select id="category-filter">
+                        <option value="all">Todas</option>
+                        <option value="array">Arrays</option>
+                        <option value="stack">Stack</option>
+                        <option value="linkedlist">Linked List</option>
+                        <option value="tree">Tree</option>
+                        <option value="dp">Dynamic Programming</option>
+                    </select>
+                </div>
+                <div id="questions-list" class="questions-list">
+                    <!-- Questions loaded dynamically -->
+                </div>
+            </aside>
+
+            <!-- Center Panel: Main Interaction -->
+            <section class="main-panel">
+                <div class="question-display" id="question-display">
+                    <div class="placeholder">
+                        <h3>👈 Selecione uma questão</h3>
+                        <p>Escolha um problema do Blind 75 para começar</p>
+                    </div>
+                </div>
+
+                <div class="interaction-area">
+                    <div class="input-section">
+                        <label>Sua pergunta ou contexto:</label>
+                        <textarea id="user-input" rows="3" placeholder="Descreva o problema ou peça ajuda..."></textarea>
+                        <div class="button-row">
+                            <button id="ask-btn" disabled>🤖 Perguntar ao Modelo</button>
+                            <button id="run-repl-btn" disabled>▶️ Executar no REPL</button>
+                            <button id="retry-btn" disabled>🔄 Tentar Novamente</button>
+                        </div>
+                    </div>
+
+                    <div class="model-output-section">
+                        <label>Resposta do Modelo:</label>
+                        <div id="model-output" class="code-block"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Panel: Python REPL -->
+            <aside class="repl-panel">
+                <h2>🐍 Python REPL</h2>
+                <div class="repl-controls">
+                    <button id="clear-repl">Limpar</button>
+                    <button id="test-solution">✓ Testar Solução</button>
+                </div>
+                <div id="repl-output" class="repl-output"></div>
+                <div class="repl-input-row">
+                    <span class="prompt">&gt;&gt;&gt;</span>
+                    <input type="text" id="repl-input" placeholder="Digite código Python..." disabled>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Execution Log Panel -->
+        <section class="execution-log">
+            <h3>📋 Log de Execução e Correções</h3>
+            <div id="execution-log" class="log-content"></div>
+        </section>
+
+        <footer>
+            <p>Modelo: <strong>Qwen2.5-Coder-0.5B</strong> | 
+               Execução: <strong>Pyodide (Python no Browser)</strong> |
+               Estratégia: <strong>Self-Correction com REPL</strong></p>
+        </footer>
+    </div>
+
+    <script src="blind75-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
