@@ -35,6 +35,7 @@ onnx_model/
 data/*.jsonl
 !data/sample_data.jsonl
 !data/leetcode_portuguese_solutions.jsonl
+!data/stackoverflow_pt_python.jsonl
 
 # Logs
 *.log
