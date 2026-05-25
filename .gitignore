@@ -34,6 +34,7 @@ onnx_model/
 # Data (keep sample, ignore large datasets)
 data/*.jsonl
 !data/sample_data.jsonl
+!data/leetcode_portuguese_solutions.jsonl
 
 # Logs
 *.log
