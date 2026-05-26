@@ -206,8 +206,10 @@ class StackOverflowPTCollector:
             questions = self.search_questions(page=page)
             
             if not questions:
-                print("No more questions found.")
-                break
+                print("No new questions on this page, trying next page...")
+                page += 1
+                time.sleep(1)
+                continue
             
             for question in questions:
                 if fetched_this_batch >= target_count:
