@@ -1,0 +1,1128 @@
+[
+  {
+    "id": 1,
+    "title_en": "Two Sum",
+    "title_pt": "Soma de Dois",
+    "difficulty": "Fácil",
+    "category": "Array",
+    "leetcode_id": 1,
+    "description": "Dado um array nums e inteiro alvo, retorne índices dos dois números que somam ao alvo.",
+    "example": "nums=[2,7,11,15], alvo=9 → [0,1]",
+    "solution": "def twoSum(nums, target):\n    vistos = {}\n    for i, num in enumerate(nums):\n        complemento = target - num\n        if complemento in vistos:\n            return [vistos[complemento], i]\n        vistos[num] = i\n    return []",
+    "hints": [
+      "Use hash map",
+      "Calcule complemento"
+    ]
+  },
+  {
+    "id": 2,
+    "title_en": "Best Time to Buy and Sell Stock",
+    "title_pt": "Melhor Dia para Comprar/Vender",
+    "difficulty": "Fácil",
+    "category": "Array",
+    "leetcode_id": 121,
+    "description": "Maximize lucro comprando e vendendo ação uma vez.",
+    "example": "prices=[7,1,5,3,6,4] → 5",
+    "solution": "def maxProfit(prices):\n    min_price = float('inf')\n    max_profit = 0\n    for price in prices:\n        min_price = min(min_price, price)\n        max_profit = max(max_profit, price - min_price)\n    return max_profit",
+    "hints": [
+      "Rastreie menor preço",
+      "Calcule lucro"
+    ]
+  },
+  {
+    "id": 3,
+    "title_en": "Contains Duplicate",
+    "title_pt": "Contém Duplicata",
+    "difficulty": "Fácil",
+    "category": "Array",
+    "leetcode_id": 217,
+    "description": "Determine se array contém valor duplicado.",
+    "example": "[1,2,3,1] → True",
+    "solution": "def containsDuplicate(nums):\n    return len(nums) != len(set(nums))",
+    "hints": [
+      "Use set",
+      "Compare tamanhos"
+    ]
+  },
+  {
+    "id": 4,
+    "title_en": "Product of Array Except Self",
+    "title_pt": "Produto Exceto Ele Mesmo",
+    "difficulty": "Médio",
+    "category": "Array",
+    "leetcode_id": 238,
+    "description": "Retorne array onde cada elemento é produto de todos os outros.",
+    "example": "[1,2,3,4] → [24,12,8,6]",
+    "solution": "def productExceptSelf(nums):\n    n = len(nums)\n    r = [1] * n\n    p = 1\n    for i in range(n):\n        r[i] = p\n        p *= nums[i]\n    s = 1\n    for i in range(n-1, -1, -1):\n        r[i] *= s\n        s *= nums[i]\n    return r",
+    "hints": [
+      "Duas passadas",
+      "Prefixo e sufixo"
+    ]
+  },
+  {
+    "id": 5,
+    "title_en": "Maximum Subarray",
+    "title_pt": "Subarray Máximo (Kadane)",
+    "difficulty": "Médio",
+    "category": "Array",
+    "leetcode_id": 53,
+    "description": "Encontre subarray contíguo com maior soma.",
+    "example": "[-2,1,-3,4,-1,2,1,-5,4] → 6",
+    "solution": "def maxSubArray(nums):\n    max_atual = max_global = nums[0]\n    for i in range(1, len(nums)):\n        max_atual = max(nums[i], max_atual + nums[i])\n        max_global = max(max_global, max_atual)\n    return max_global",
+    "hints": [
+      "Kadane",
+      "DP local/global"
+    ]
+  },
+  {
+    "id": 6,
+    "title_en": "Maximum Product Subarray",
+    "title_pt": "Subarray Produto Máximo",
+    "difficulty": "Médio",
+    "category": "Array",
+    "leetcode_id": 152,
+    "description": "Encontre subarray com maior produto.",
+    "example": "[2,3,-2,4] → 6",
+    "solution": "def maxProduct(nums):\n    max_prod = min_prod = resultado = nums[0]\n    for i in range(1, len(nums)):\n        if nums[i] < 0:\n            max_prod, min_prod = min_prod, max_prod\n        max_prod = max(nums[i], max_prod * nums[i])\n        min_prod = min(nums[i], min_prod * nums[i])\n        resultado = max(resultado, max_prod)\n    return resultado",
+    "hints": [
+      "Rastreie max e min",
+      "Cuidado com negativos"
+    ]
+  },
+  {
+    "id": 7,
+    "title_en": "Find Minimum in Rotated Sorted Array",
+    "title_pt": "Mínimo em Array Rotacionado",
+    "difficulty": "Médio",
+    "category": "Array",
+    "leetcode_id": 153,
+    "description": "Encontre elemento mínimo em array ordenado rotacionado.",
+    "example": "[3,4,5,1,2] → 1",
+    "solution": "def findMin(nums):\n    esquerda, direita = 0, len(nums) - 1\n    while esquerda < direita:\n        meio = (esquerda + direita) // 2\n        if nums[meio] > nums[direita]:\n            esquerda = meio + 1\n        else:\n            direita = meio\n    return nums[esquerda]",
+    "hints": [
+      "Busca binária",
+      "Compare com direita"
+    ]
+  },
+  {
+    "id": 8,
+    "title_en": "Search in Rotated Sorted Array",
+    "title_pt": "Busca em Array Rotacionado",
+    "difficulty": "Médio",
+    "category": "Array",
+    "leetcode_id": 33,
+    "description": "Busca elemento em array ordenado rotacionado.",
+    "example": "[4,5,6,7,0,1,2], target=0 → 4",
+    "solution": "def search(nums, target):\n    l, r = 0, len(nums) - 1\n    while l <= r:\n        m = (l + r) // 2\n        if nums[m] == target:\n            return m\n        if nums[l] <= nums[m]:\n            if nums[l] <= target < nums[m]:\n                r = m - 1\n            else:\n                l = m + 1\n        else:\n            if nums[m] < target <= nums[r]:\n                l = m + 1\n            else:\n                r = m - 1\n    return -1",
+    "hints": [
+      "Identifique metade ordenada",
+      "Busca binária"
+    ]
+  },
+  {
+    "id": 9,
+    "title_en": "3Sum",
+    "title_pt": "Soma de Três",
+    "difficulty": "Médio",
+    "category": "Array",
+    "leetcode_id": 15,
+    "description": "Encontre todos os triplets que somam a zero.",
+    "example": "[-1,0,1,2,-1,-4] → [[-1,-1,2],[-1,0,1]]",
+    "solution": "def threeSum(nums):\n    nums.sort()\n    resultado = []\n    for i in range(len(nums) - 2):\n        if i > 0 and nums[i] == nums[i-1]:\n            continue\n        esquerda, direita = i + 1, len(nums) - 1\n        while esquerda < direita:\n            soma = nums[i] + nums[esquerda] + nums[direita]\n            if soma == 0:\n                resultado.append([nums[i], nums[esquerda], nums[direita]])\n                esquerda += 1\n                direita -= 1\n            elif soma < 0:\n                esquerda += 1\n            else:\n                direita -= 1\n    return resultado",
+    "hints": [
+      "Ordene",
+      "Dois ponteiros"
+    ]
+  },
+  {
+    "id": 10,
+    "title_en": "Container With Most Water",
+    "title_pt": "Container com Mais Água",
+    "difficulty": "Médio",
+    "category": "Array",
+    "leetcode_id": 11,
+    "description": "Encontre duas linhas que formem container com maior área.",
+    "example": "[1,8,6,2,5,4,8,3,7] → 49",
+    "solution": "def maxArea(height):\n    esquerda, direita = 0, len(height) - 1\n    max_area = 0\n    while esquerda < direita:\n        largura = direita - esquerda\n        altura = min(height[esquerda], height[direita])\n        max_area = max(max_area, largura * altura)\n        if height[esquerda] < height[direita]:\n            esquerda += 1\n        else:\n            direita -= 1\n    return max_area",
+    "hints": [
+      "Dois ponteiros",
+      "Mova o menor"
+    ]
+  },
+  {
+    "id": 11,
+    "title_en": "Trapping Rain Water",
+    "title_pt": "Armazenar Água",
+    "difficulty": "Difícil",
+    "category": "Array",
+    "leetcode_id": 42,
+    "description": "Calcule quanta água pode ser armazenada.",
+    "example": "[0,1,0,2,1,0,1,3,2,1,2,1] → 6",
+    "solution": "def trap(height):\n    if not height:\n        return 0\n    esquerda, direita = 0, len(height) - 1\n    max_esq = max_dir = agua = 0\n    while esquerda < direita:\n        if height[esquerda] < height[direita]:\n            if height[esquerda] >= max_esq:\n                max_esq = height[esquerda]\n            else:\n                agua += max_esq - height[esquerda]\n            esquerda += 1\n        else:\n            if height[direita] >= max_dir:\n                max_dir = height[direita]\n            else:\n                agua += max_dir - height[direita]\n            direita -= 1\n    return agua",
+    "hints": [
+      "Dois ponteiros",
+      "Alturas máximas"
+    ]
+  },
+  {
+    "id": 12,
+    "title_en": "Sum of Two Integers",
+    "title_pt": "Soma sem Operadores",
+    "difficulty": "Médio",
+    "category": "Binary",
+    "leetcode_id": 371,
+    "description": "Calcule soma sem usar + ou -.",
+    "example": "a=1, b=2 → 3",
+    "solution": "def getSum(a, b):\n    mask = 0xFFFFFFFF\n    while b != 0:\n        a, b = (a ^ b) & mask, ((a & b) << 1) & mask\n    return a if a <= 0x7FFFFFFF else ~(a ^ mask)",
+    "hints": [
+      "XOR para soma",
+      "AND para carry"
+    ]
+  },
+  {
+    "id": 13,
+    "title_en": "Number of 1 Bits",
+    "title_pt": "Número de Bits 1",
+    "difficulty": "Fácil",
+    "category": "Binary",
+    "leetcode_id": 191,
+    "description": "Conte número de bits '1'.",
+    "example": "n=0001011 → 3",
+    "solution": "def hammingWeight(n):\n    contagem = 0\n    while n:\n        n &= n - 1\n        contagem += 1\n    return contagem",
+    "hints": [
+      "n&(n-1) limpa bit",
+      "Conte iterações"
+    ]
+  },
+  {
+    "id": 14,
+    "title_en": "Counting Bits",
+    "title_pt": "Contando Bits",
+    "difficulty": "Fácil",
+    "category": "Binary",
+    "leetcode_id": 338,
+    "description": "Retorne array com número de 1s de cada número de 0 a n.",
+    "example": "n=5 → [0,1,1,2,1,2]",
+    "solution": "def countBits(n):\n    dp = [0] * (n + 1)\n    for i in range(1, n + 1):\n        dp[i] = dp[i >> 1] + (i & 1)\n    return dp",
+    "hints": [
+      "DP",
+      "dp[i]=dp[i/2]+(i%2)"
+    ]
+  },
+  {
+    "id": 15,
+    "title_en": "Missing Number",
+    "title_pt": "Número Faltante",
+    "difficulty": "Fácil",
+    "category": "Binary",
+    "leetcode_id": 268,
+    "description": "Encontre número faltante em array [0,n].",
+    "example": "[3,0,1] → 2",
+    "solution": "def missingNumber(nums):\n    n = len(nums)\n    return n * (n + 1) // 2 - sum(nums)",
+    "hints": [
+      "Soma esperada - real",
+      "Ou use XOR"
+    ]
+  },
+  {
+    "id": 16,
+    "title_en": "Reverse Bits",
+    "title_pt": "Reverter Bits",
+    "difficulty": "Fácil",
+    "category": "Binary",
+    "leetcode_id": 190,
+    "description": "Inverta bits de inteiro de 32 bits.",
+    "example": "... → bits invertidos",
+    "solution": "def reverseBits(n):\n    resultado = 0\n    for i in range(32):\n        resultado |= (n >> i & 1) << (31 - i)\n    return resultado",
+    "hints": [
+      "Itere 32 bits",
+      "Coloque bit i em 31-i"
+    ]
+  },
+  {
+    "id": 17,
+    "title_en": "Climbing Stairs",
+    "title_pt": "Escadaria",
+    "difficulty": "Fácil",
+    "category": "Dynamic Programming",
+    "leetcode_id": 70,
+    "description": "De quantas formas pode subir n degraus se pode subir 1 ou 2 de cada vez?",
+    "example": "n=3 → 3",
+    "solution": "def climbStairs(n):\n    if n <= 2:\n        return n\n    a, b = 1, 2\n    for _ in range(3, n + 1):\n        a, b = b, a + b\n    return b",
+    "hints": [
+      "Fibonacci",
+      "DP bottom-up"
+    ]
+  },
+  {
+    "id": 18,
+    "title_en": "Coin Change",
+    "title_pt": "Troco",
+    "difficulty": "Médio",
+    "category": "Dynamic Programming",
+    "leetcode_id": 322,
+    "description": "Menor número de moedas para fazer o troco.",
+    "example": "coins=[1,2,5], amount=11 → 3",
+    "solution": "def coinChange(coins, amount):\n    dp = [float('inf')] * (amount + 1)\n    dp[0] = 0\n    for c in coins:\n        for i in range(c, amount + 1):\n            dp[i] = min(dp[i], dp[i - c] + 1)\n    return dp[amount] if dp[amount] != float('inf') else -1",
+    "hints": [
+      "DP bottom-up",
+      "Para cada moeda"
+    ]
+  },
+  {
+    "id": 19,
+    "title_en": "Longest Increasing Subsequence",
+    "title_pt": "Maior Subsequência Crescente",
+    "difficulty": "Médio",
+    "category": "Dynamic Programming",
+    "leetcode_id": 300,
+    "description": "Comprimento da maior subsequência crescente.",
+    "example": "[10,9,2,5,3,7,101,18] → 4",
+    "solution": "def lengthOfLIS(nums):\n    if not nums:\n        return 0\n    dp = [1] * len(nums)\n    for i in range(1, len(nums)):\n        for j in range(i):\n            if nums[i] > nums[j]:\n                dp[i] = max(dp[i], dp[j] + 1)\n    return max(dp)",
+    "hints": [
+      "DP",
+      "dp[i]=max(dp[j])+1"
+    ]
+  },
+  {
+    "id": 20,
+    "title_en": "Longest Common Subsequence",
+    "title_pt": "Maior Subsequência Comum",
+    "difficulty": "Médio",
+    "category": "Dynamic Programming",
+    "leetcode_id": 1143,
+    "description": "Comprimento da maior subsequência comum entre duas strings.",
+    "example": "text1=abcde, text2=ace → 3",
+    "solution": "def longestCommonSubsequence(t1, t2):\n    m, n = len(t1), len(t2)\n    dp = [[0] * (n + 1) for _ in range(m + 1)]\n    for i in range(1, m + 1):\n        for j in range(1, n + 1):\n            if t1[i-1] == t2[j-1]:\n                dp[i][j] = dp[i-1][j-1] + 1\n            else:\n                dp[i][j] = max(dp[i-1][j], dp[i][j-1])\n    return dp[m][n]",
+    "hints": [
+      "Matriz DP",
+      "Se iguais: diagonal+1"
+    ]
+  },
+  {
+    "id": 21,
+    "title_en": "Word Break",
+    "title_pt": "Quebra de Palavra",
+    "difficulty": "Médio",
+    "category": "Dynamic Programming",
+    "leetcode_id": 139,
+    "description": "Determine se string pode ser segmentada em palavras do dicionário.",
+    "example": "s=leetcode, wordDict=[leet,code] → True",
+    "solution": "def wordBreak(s, wordDict):\n    dp = [False] * (len(s) + 1)\n    dp[0] = True\n    for i in range(1, len(s) + 1):\n        for w in wordDict:\n            if i >= len(w) and s[i-len(w):i] == w:\n                dp[i] = dp[i] or dp[i - len(w)]\n    return dp[len(s)]",
+    "hints": [
+      "DP booleano",
+      "Verifique cada palavra"
+    ]
+  },
+  {
+    "id": 22,
+    "title_en": "Combination Sum",
+    "title_pt": "Soma de Combinação",
+    "difficulty": "Médio",
+    "category": "Dynamic Programming",
+    "leetcode_id": 39,
+    "description": "Encontre todas combinações únicas que somam ao alvo.",
+    "example": "candidates=[2,3,6,7], target=7 → [[7],[2,2,3]]",
+    "solution": "def combinationSum(candidates, target):\n    r = []\n    def backtrack(soma, path, start):\n        if soma == target:\n            r.append(path[:])\n            return\n        if soma > target:\n            return\n        for i in range(start, len(candidates)):\n            path.append(candidates[i])\n            backtrack(soma + candidates[i], path, i)\n            path.pop()\n    backtrack(0, [], 0)\n    return r",
+    "hints": [
+      "Backtracking",
+      "Permite reuso"
+    ]
+  },
+  {
+    "id": 23,
+    "title_en": "House Robber",
+    "title_pt": "Ladrão de Casas",
+    "difficulty": "Médio",
+    "category": "Dynamic Programming",
+    "leetcode_id": 198,
+    "description": "Roube casas sem roubar duas adjacentes. Maximize o roubo.",
+    "example": "[1,2,3,1] → 4",
+    "solution": "def rob(nums):\n    if not nums:\n        return 0\n    if len(nums) == 1:\n        return nums[0]\n    a, b = nums[0], max(nums[0], nums[1])\n    for i in range(2, len(nums)):\n        a, b = b, max(b, a + nums[i])\n    return b",
+    "hints": [
+      "DP",
+      "max(roubar atual+n-2, n-1)"
+    ]
+  },
+  {
+    "id": 24,
+    "title_en": "House Robber II",
+    "title_pt": "Ladrão de Casas II",
+    "difficulty": "Médio",
+    "category": "Dynamic Programming",
+    "leetcode_id": 213,
+    "description": "Casas em círculo. Não pode roubar primeira e última.",
+    "example": "[2,3,2] → 3",
+    "solution": "def rob(nums):\n    if not nums:\n        return 0\n    if len(nums) == 1:\n        return nums[0]\n    def helper(n):\n        a, b = 0, 0\n        for x in n:\n            a, b = b, max(b, a + x)\n        return b\n    return max(helper(nums[:-1]), helper(nums[1:]))",
+    "hints": [
+      "Duas chamadas",
+      "Exclua primeiro ou último"
+    ]
+  },
+  {
+    "id": 25,
+    "title_en": "Decode Ways",
+    "title_pt": "Decodificar Mensagens",
+    "difficulty": "Médio",
+    "category": "Dynamic Programming",
+    "leetcode_id": 91,
+    "description": "Quantas formas de decodificar string de dígitos (A=1...Z=26).",
+    "example": "12 → 2 (AB ou L)",
+    "solution": "def numDecodings(s):\n    if not s or s[0] == '0':\n        return 0\n    n = len(s)\n    dp = [0] * (n + 1)\n    dp[0] = dp[1] = 1\n    for i in range(2, n + 1):\n        if s[i-1] != '0':\n            dp[i] += dp[i-1]\n        if 10 <= int(s[i-2:i]) <= 26:\n            dp[i] += dp[i-2]\n    return dp[n]",
+    "hints": [
+      "DP",
+      "Verifique dígito único e duplo"
+    ]
+  },
+  {
+    "id": 26,
+    "title_en": "Unique Paths",
+    "title_pt": "Caminhos Únicos",
+    "difficulty": "Médio",
+    "category": "Dynamic Programming",
+    "leetcode_id": 62,
+    "description": "Quantos caminhos únicos de canto superior esquerdo ao inferior direito numa grade?",
+    "example": "m=3, n=7 → 28",
+    "solution": "def uniquePaths(m, n):\n    dp = [[1] * n for _ in range(m)]\n    for i in range(1, m):\n        for j in range(1, n):\n            dp[i][j] = dp[i-1][j] + dp[i][j-1]\n    return dp[m-1][n-1]",
+    "hints": [
+      "DP matriz",
+      "Soma de cima e esquerda"
+    ]
+  },
+  {
+    "id": 27,
+    "title_en": "Jump Game",
+    "title_pt": "Jogo do Pulo",
+    "difficulty": "Médio",
+    "category": "Dynamic Programming",
+    "leetcode_id": 55,
+    "description": "Consegue chegar ao último índice a partir do primeiro?",
+    "example": "[2,3,1,1,4] → True",
+    "solution": "def canJump(nums):\n    max_reach = 0\n    for i, n in enumerate(nums):\n        if i > max_reach:\n            return False\n        max_reach = max(max_reach, i + n)\n    return True",
+    "hints": [
+      "Greedy",
+      "Rastreie alcance máximo"
+    ]
+  },
+  {
+    "id": 28,
+    "title_en": "Palindromic Substrings",
+    "title_pt": "Substrings Palíndromas",
+    "difficulty": "Médio",
+    "category": "Dynamic Programming",
+    "leetcode_id": 647,
+    "description": "Conte quantas substrings são palíndromos.",
+    "example": "abc → 3",
+    "solution": "def countSubstrings(s):\n    n = len(s)\n    r = 0\n    for c in range(2 * n - 1):\n        l, ri = c // 2, (c + 1) // 2\n        while l >= 0 and ri < n and s[l] == s[ri]:\n            r += 1\n            l -= 1\n            ri += 1\n    return r",
+    "hints": [
+      "Expanda a partir do centro",
+      "Verifique cada centro"
+    ]
+  },
+  {
+    "id": 29,
+    "title_en": "Longest Palindromic Substring",
+    "title_pt": "Maior Substring Palíndroma",
+    "difficulty": "Médio",
+    "category": "Dynamic Programming",
+    "leetcode_id": 5,
+    "description": "Encontre a maior substring que é palíndromo.",
+    "example": "babad → bab",
+    "solution": "def longestPalindrome(s):\n    if not s:\n        return ''\n    start = end = 0\n    for i in range(len(s)):\n        l1, e1 = expand(s, i, i)\n        l2, e2 = expand(s, i, i + 1)\n        if e1 - l1 > end - start:\n            start, end = l1, e1\n        if e2 - l2 > end - start:\n            start, end = l2, e2\n    return s[start:end+1]\n\ndef expand(s, l, r):\n    while l >= 0 and r < len(s) and s[l] == s[r]:\n        l -= 1\n        r += 1\n    return l + 1, r - 1",
+    "hints": [
+      "Expanda do centro",
+      "Verifique ímpar e par"
+    ]
+  },
+  {
+    "id": 30,
+    "title_en": "Edit Distance",
+    "title_pt": "Distância de Edição",
+    "difficulty": "Difícil",
+    "category": "Dynamic Programming",
+    "leetcode_id": 72,
+    "description": "Número mínimo de operações para transformar word1 em word2.",
+    "example": "horse, ros → 3",
+    "solution": "def minDistance(w1, w2):\n    m, n = len(w1), len(w2)\n    dp = [[0] * (n + 1) for _ in range(m + 1)]\n    for i in range(m + 1):\n        dp[i][0] = i\n    for j in range(n + 1):\n        dp[0][j] = j\n    for i in range(1, m + 1):\n        for j in range(1, n + 1):\n            if w1[i-1] == w2[j-1]:\n                dp[i][j] = dp[i-1][j-1]\n            else:\n                dp[i][j] = 1 + min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1])\n    return dp[m][n]",
+    "hints": [
+      "Matriz DP",
+      "Min de 3 operações"
+    ]
+  },
+  {
+    "id": 31,
+    "title_en": "Number of Islands",
+    "title_pt": "Número de Ilhas",
+    "difficulty": "Médio",
+    "category": "Graph",
+    "leetcode_id": 200,
+    "description": "Conte ilhas (grupos conectados de '1's) numa grade 2D.",
+    "example": "[['1','1','0'],['1','1','0']] → 1",
+    "solution": "def numIslands(grid):\n    if not grid:\n        return 0\n    r, c, res = len(grid), len(grid[0]), 0\n    def dfs(i, j):\n        if i < 0 or j < 0 or i >= r or j >= c or grid[i][j] != '1':\n            return\n        grid[i][j] = '0'\n        for di, dj in [(0,1), (0,-1), (1,0), (-1,0)]:\n            dfs(i + di, j + dj)\n    for i in range(r):\n        for j in range(c):\n            if grid[i][j] == '1':\n                dfs(i, j)\n                res += 1\n    return res",
+    "hints": [
+      "DFS/BFS",
+      "Marque visitados"
+    ]
+  },
+  {
+    "id": 32,
+    "title_en": "Clone Graph",
+    "title_pt": "Clonar Grafo",
+    "difficulty": "Médio",
+    "category": "Graph",
+    "leetcode_id": 133,
+    "description": "Retorne cópia profunda de grafo conectado.",
+    "example": "... → cópia",
+    "solution": "def cloneGraph(node):\n    if not node:\n        return None\n    d = {}\n    def dfs(n):\n        if n in d:\n            return d[n]\n        copy = Node(n.val)\n        d[n] = copy\n        for nei in n.neighbors:\n            copy.neighbors.append(dfs(nei))\n        return copy\n    return dfs(node)",
+    "hints": [
+      "DFS com hash map",
+      "Evite ciclos"
+    ]
+  },
+  {
+    "id": 33,
+    "title_en": "Pacific Atlantic Water Flow",
+    "title_pt": "Fluxo de Água",
+    "difficulty": "Médio",
+    "category": "Graph",
+    "leetcode_id": 417,
+    "description": "Encontre células que podem fluir para ambos os oceanos.",
+    "example": "heights=[[1,2],[4,3]] → [[0,1],[1,0],[1,1]]",
+    "solution": "def pacificAtlantic(heights):\n    if not heights:\n        return []\n    r, c = len(heights), len(heights[0])\n    pac, atl = set(), set()\n    def dfs(i, j, vis, prev):\n        if i < 0 or i >= r or j < 0 or j >= c or (i,j) in vis or heights[i][j] < prev:\n            return\n        vis.add((i, j))\n        for di, dj in [(0,1), (0,-1), (1,0), (-1,0)]:\n            dfs(i + di, j + dj, vis, heights[i][j])\n    for i in range(r):\n        dfs(i, 0, pac, heights[i][0])\n        dfs(i, c-1, atl, heights[i][c-1])\n    for j in range(c):\n        dfs(0, j, pac, heights[0][j])\n        dfs(r-1, j, atl, heights[r-1][j])\n    return [list(x) for x in pac & atl]",
+    "hints": [
+      "DFS de bordas",
+      "Interseção de conjuntos"
+    ]
+  },
+  {
+    "id": 34,
+    "title_en": "Course Schedule",
+    "title_pt": "Grade de Cursos",
+    "difficulty": "Médio",
+    "category": "Graph",
+    "leetcode_id": 207,
+    "description": "Consegue terminar todos os cursos dados pré-requisitos?",
+    "example": "numCourses=2, prerequisites=[[1,0]] → True",
+    "solution": "def canFinish(numCourses, prerequisites):\n    g = [[] for _ in range(numCourses)]\n    d = [0] * numCourses\n    for a, b in prerequisites:\n        g[b].append(a)\n        d[a] += 1\n    q = [i for i in range(numCourses) if d[i] == 0]\n    for i in q:\n        for j in g[i]:\n            d[j] -= 1\n            if d[j] == 0:\n                q.append(j)\n    return len(q) == numCourses",
+    "hints": [
+      "Detecção de ciclo",
+      "Ordenação topológica"
+    ]
+  },
+  {
+    "id": 35,
+    "title_en": "Course Schedule II",
+    "title_pt": "Grade de Cursos II",
+    "difficulty": "Médio",
+    "category": "Graph",
+    "leetcode_id": 210,
+    "description": "Retorne ordem válida para cursar todas as disciplinas.",
+    "example": "numCourses=2, prerequisites=[[1,0]] → [0,1]",
+    "solution": "def findOrder(numCourses, prerequisites):\n    g = [[] for _ in range(numCourses)]\n    d = [0] * numCourses\n    for a, b in prerequisites:\n        g[b].append(a)\n        d[a] += 1\n    q = [i for i in range(numCourses) if d[i] == 0]\n    r = []\n    for i in q:\n        r.append(i)\n        for j in g[i]:\n            d[j] -= 1\n            if d[j] == 0:\n                q.append(j)\n    return r if len(r) == numCourses else []",
+    "hints": [
+      "Ordenação topológica",
+      "BFS (Kahn)"
+    ]
+  },
+  {
+    "id": 36,
+    "title_en": "Rotting Oranges",
+    "title_pt": "Laranjas Podres",
+    "difficulty": "Médio",
+    "category": "Graph",
+    "leetcode_id": 994,
+    "description": "Quanto tempo para todas as laranjas ficarem podres?",
+    "example": "grid=[[2,1,1],[1,1,0]] → 4",
+    "solution": "def orangesRotting(grid):\n    from collections import deque\n    q, fresh = deque(), 0\n    for i in range(len(grid)):\n        for j in range(len(grid[0])):\n            if grid[i][j] == 2:\n                q.append((i, j, 0))\n            elif grid[i][j] == 1:\n                fresh += 1\n    mins = 0\n    while q:\n        i, j, mins = q.popleft()\n        for di, dj in [(0,1), (0,-1), (1,0), (-1,0)]:\n            ni, nj = i + di, j + dj\n            if 0 <= ni < len(grid) and 0 <= nj < len(grid[0]) and grid[ni][nj] == 1:\n                grid[ni][nj] = 2\n                fresh -= 1\n                q.append((ni, nj, mins + 1))\n    return mins if fresh == 0 else -1",
+    "hints": [
+      "BFS multi-fonte",
+      "Controle tempo"
+    ]
+  },
+  {
+    "id": 37,
+    "title_en": "Graph Valid Tree",
+    "title_pt": "Árvore Válida",
+    "difficulty": "Médio",
+    "category": "Graph",
+    "leetcode_id": 261,
+    "description": "Determine se grafo é árvore válida (conectado, sem ciclos).",
+    "example": "n=5, edges=[[0,1],[0,2],[0,3],[1,4]] → True",
+    "solution": "def validTree(n, edges):\n    if len(edges) != n - 1:\n        return False\n    g = [[] for _ in range(n)]\n    for a, b in edges:\n        g[a].append(b)\n        g[b].append(a)\n    vis = set()\n    def dfs(i, p):\n        if i in vis:\n            return False\n        vis.add(i)\n        for j in g[i]:\n            if j != p and not dfs(j, i):\n                return False\n        return True\n    return dfs(0, -1) and len(vis) == n",
+    "hints": [
+      "Verifique arestas=n-1",
+      "DFS para conectividade"
+    ]
+  },
+  {
+    "id": 38,
+    "title_en": "Alien Dictionary",
+    "title_pt": "Dicionário Alienígena",
+    "difficulty": "Difícil",
+    "category": "Graph",
+    "leetcode_id": 269,
+    "description": "Deduza ordem de letras de palavras em idioma alien.",
+    "example": "words=['wrt','wrf','er'] → wertf",
+    "solution": "def alienOrder(words):\n    from collections import defaultdict, deque\n    g = defaultdict(set)\n    d = {c: 0 for w in words for c in w}\n    for i in range(len(words) - 1):\n        for c1, c2 in zip(words[i], words[i+1]):\n            if c1 != c2:\n                if c2 not in g[c1]:\n                    g[c1].add(c2)\n                    d[c2] += 1\n                break\n    q = deque([c for c in d if d[c] == 0])\n    r = []\n    while q:\n        c = q.popleft()\n        r.append(c)\n        for n in g[c]:\n            d[n] -= 1\n            if d[n] == 0:\n                q.append(n)\n    return ''.join(r) if len(r) == len(d) else ''",
+    "hints": [
+      "Construa grafo",
+      "Ordenação topológica"
+    ]
+  },
+  {
+    "id": 39,
+    "title_en": "Word Ladder",
+    "title_pt": "Escada de Palavras",
+    "difficulty": "Difícil",
+    "category": "Graph",
+    "leetcode_id": 127,
+    "description": "Comprimento da sequência de transformação mais curta.",
+    "example": "beginWord=hit, endWord=cog, wordList=[hot,dot,dog,cog] → 5",
+    "solution": "def ladderLength(bw, ew, wl):\n    from collections import deque\n    if ew not in wl:\n        return 0\n    wl = set(wl)\n    q = deque([(bw, 1)])\n    while q:\n        w, l = q.popleft()\n        if w == ew:\n            return l\n        for i in range(len(w)):\n            for c in 'abcdefghijklmnopqrstuvwxyz':\n                nw = w[:i] + c + w[i+1:]\n                if nw in wl:\n                    wl.remove(nw)\n                    q.append((nw, l + 1))\n    return 0",
+    "hints": [
+      "BFS",
+      "Gere vizinhos"
+    ]
+  },
+  {
+    "id": 40,
+    "title_en": "Word Search",
+    "title_pt": "Busca de Palavra",
+    "difficulty": "Médio",
+    "category": "Graph",
+    "leetcode_id": 79,
+    "description": "Palavra existe na grade? (células adjacentes).",
+    "example": "board=[['A','B'],['C','D']], word='AB' → True",
+    "solution": "def exist(board, word):\n    r, c = len(board), len(board[0])\n    def dfs(i, j, k):\n        if k == len(word):\n            return True\n        if i < 0 or j < 0 or i >= r or j >= c or board[i][j] != word[k]:\n            return False\n        t, board[i][j] = board[i][j], '#'\n        res = dfs(i+1,j,k+1) or dfs(i-1,j,k+1) or dfs(i,j+1,k+1) or dfs(i,j-1,k+1)\n        board[i][j] = t\n        return res\n    for i in range(r):\n        for j in range(c):\n            if dfs(i, j, 0):\n                return True\n    return False",
+    "hints": [
+      "DFS",
+      "Marque visitados"
+    ]
+  },
+  {
+    "id": 41,
+    "title_en": "Insert Interval",
+    "title_pt": "Inserir Intervalo",
+    "difficulty": "Médio",
+    "category": "Interval",
+    "leetcode_id": 57,
+    "description": "Insira novo intervalo em lista de intervalos não sobrepostos.",
+    "example": "intervals=[[1,3],[6,9]], newInterval=[2,5] → [[1,5],[6,9]]",
+    "solution": "def insert(intervals, newInterval):\n    r = []\n    i = 0\n    while i < len(intervals) and intervals[i][1] < newInterval[0]:\n        r.append(intervals[i])\n        i += 1\n    while i < len(intervals) and intervals[i][0] <= newInterval[1]:\n        newInterval[0] = min(newInterval[0], intervals[i][0])\n        newInterval[1] = max(newInterval[1], intervals[i][1])\n        i += 1\n    r.append(newInterval)\n    while i < len(intervals):\n        r.append(intervals[i])\n        i += 1\n    return r",
+    "hints": [
+      "Três partes",
+      "Merge sobrepostos"
+    ]
+  },
+  {
+    "id": 42,
+    "title_en": "Merge Intervals",
+    "title_pt": "Mesclar Intervalos",
+    "difficulty": "Médio",
+    "category": "Interval",
+    "leetcode_id": 56,
+    "description": "Mesclue todos os intervalos sobrepostos.",
+    "example": "[[1,3],[2,6],[8,10]] → [[1,6],[8,10]]",
+    "solution": "def merge(intervals):\n    if not intervals:\n        return []\n    intervals.sort(key=lambda x: x[0])\n    r = [intervals[0]]\n    for i in range(1, len(intervals)):\n        if intervals[i][0] <= r[-1][1]:\n            r[-1][1] = max(r[-1][1], intervals[i][1])\n        else:\n            r.append(intervals[i])\n    return r",
+    "hints": [
+      "Ordene por início",
+      "Merge se sobreposto"
+    ]
+  },
+  {
+    "id": 43,
+    "title_en": "Non-overlapping Intervals",
+    "title_pt": "Intervalos Não Sobrepostos",
+    "difficulty": "Médio",
+    "category": "Interval",
+    "leetcode_id": 435,
+    "description": "Mínimo de intervalos a remover para que nenhum se sobreponha.",
+    "example": "[[1,2],[2,3],[3,4],[1,3]] → 1",
+    "solution": "def eraseOverlapIntervals(intervals):\n    if not intervals:\n        return 0\n    intervals.sort(key=lambda x: x[1])\n    end = intervals[0][1]\n    count = 1\n    for i in range(1, len(intervals)):\n        if intervals[i][0] >= end:\n            count += 1\n            end = intervals[i][1]\n    return len(intervals) - count",
+    "hints": [
+      "Greedy",
+      "Ordene por fim"
+    ]
+  },
+  {
+    "id": 44,
+    "title_en": "Meeting Rooms",
+    "title_pt": "Salas de Reunião",
+    "difficulty": "Fácil",
+    "category": "Interval",
+    "leetcode_id": 252,
+    "description": "Consegue participar de todas as reuniões?",
+    "example": "[[0,30],[5,10],[15,20]] → False",
+    "solution": "def canAttendMeetings(intervals):\n    intervals.sort()\n    for i in range(1, len(intervals)):\n        if intervals[i][0] < intervals[i-1][1]:\n            return False\n    return True",
+    "hints": [
+      "Ordene",
+      "Verifique sobreposição"
+    ]
+  },
+  {
+    "id": 45,
+    "title_en": "Meeting Rooms II",
+    "title_pt": "Salas de Reunião II",
+    "difficulty": "Médio",
+    "category": "Interval",
+    "leetcode_id": 253,
+    "description": "Quantas salas são necessárias?",
+    "example": "[[0,30],[5,10],[15,20]] → 2",
+    "solution": "def minMeetingRooms(intervals):\n    if not intervals:\n        return 0\n    start = sorted([i[0] for i in intervals])\n    end = sorted([i[1] for i in intervals])\n    s = e = 0\n    rooms = max_rooms = 0\n    while s < len(intervals):\n        if start[s] < end[e]:\n            rooms += 1\n            max_rooms = max(max_rooms, rooms)\n            s += 1\n        else:\n            rooms -= 1\n            e += 1\n    return max_rooms",
+    "hints": [
+      "Dois ponteiros",
+      "Controle entrada/saída"
+    ]
+  },
+  {
+    "id": 46,
+    "title_en": "Minimum Interval to Include Each Query",
+    "title_pt": "Intervalo Mínimo para Consultas",
+    "difficulty": "Difícil",
+    "category": "Interval",
+    "leetcode_id": 1851,
+    "description": "Para cada consulta, encontre menor intervalo que a contém.",
+    "example": "intervals=[[1,4],[2,4]], queries=[2,3] → [3,3]",
+    "solution": "def minInterval(intervals, queries):\n    import heapq\n    intervals.sort()\n    sorted_q = sorted((q, i) for i, q in enumerate(queries))\n    r = [-1] * len(queries)\n    i = 0\n    h = []\n    for q, idx in sorted_q:\n        while i < len(intervals) and intervals[i][0] <= q:\n            heapq.heappush(h, (intervals[i][1] - intervals[i][0] + 1, intervals[i][1]))\n            i += 1\n        while h and h[0][1] < q:\n            heapq.heappop(h)\n        if h:\n            r[idx] = h[0][0]\n    return r",
+    "hints": [
+      "Min heap",
+      "Ordene consultas"
+    ]
+  },
+  {
+    "id": 47,
+    "title_en": "Reverse Linked List",
+    "title_pt": "Reverter Lista Ligada",
+    "difficulty": "Fácil",
+    "category": "Linked List",
+    "leetcode_id": 206,
+    "description": "Inverta uma lista ligada.",
+    "example": "1->2->3->None → 3->2->1->None",
+    "solution": "def reverseList(head):\n    anterior = None\n    atual = head\n    while atual:\n        proximo = atual.next\n        atual.next = anterior\n        anterior = atual\n        atual = proximo\n    return anterior",
+    "hints": [
+      "Três ponteiros",
+      "Inverte ponteiro"
+    ]
+  },
+  {
+    "id": 48,
+    "title_en": "Linked List Cycle",
+    "title_pt": "Ciclo em Lista Ligada",
+    "difficulty": "Fácil",
+    "category": "Linked List",
+    "leetcode_id": 141,
+    "description": "Determine se lista ligada tem ciclo.",
+    "example": "... → True/False",
+    "solution": "def hasCycle(head):\n    if not head or not head.next:\n        return False\n    lento = head\n    rapido = head.next\n    while rapido and rapido.next:\n        if lento == rapido:\n            return True\n        lento = lento.next\n        rapido = rapido.next.next\n    return False",
+    "hints": [
+      "Tartaruga e lebre",
+      "Dois ponteiros"
+    ]
+  },
+  {
+    "id": 49,
+    "title_en": "Merge Two Sorted Lists",
+    "title_pt": "Mesclar Duas Listas Ordenadas",
+    "difficulty": "Fácil",
+    "category": "Linked List",
+    "leetcode_id": 21,
+    "description": "Mesclue duas listas ligadas ordenadas.",
+    "example": "1->2, 1->3 → 1->1->2->3",
+    "solution": "def mergeTwoLists(l1, l2):\n    dummy = ListNode(0)\n    atual = dummy\n    while l1 and l2:\n        if l1.val < l2.val:\n            atual.next = l1\n            l1 = l1.next\n        else:\n            atual.next = l2\n            l2 = l2.next\n        atual = atual.next\n    atual.next = l1 or l2\n    return dummy.next",
+    "hints": [
+      "Dummy node",
+      "Compare cabeças"
+    ]
+  },
+  {
+    "id": 50,
+    "title_en": "Merge k Sorted Lists",
+    "title_pt": "Mesclar k Listas Ordenadas",
+    "difficulty": "Difícil",
+    "category": "Linked List",
+    "leetcode_id": 23,
+    "description": "Mesclue k listas ligadas ordenadas.",
+    "example": "[[1,4,5],[1,3,4]] → [1,1,3,4,4,5]",
+    "solution": "def mergeKLists(lists):\n    import heapq\n    dummy = ListNode(0)\n    atual = dummy\n    h = []\n    for i, l in enumerate(lists):\n        if l:\n            heapq.heappush(h, (l.val, i, l))\n    while h:\n        val, i, node = heapq.heappop(h)\n        atual.next = node\n        atual = atual.next\n        if node.next:\n            heapq.heappush(h, (node.next.val, i, node.next))\n    return dummy.next",
+    "hints": [
+      "Min heap",
+      "Ou divide and conquer"
+    ]
+  },
+  {
+    "id": 51,
+    "title_en": "Remove Nth Node From End of List",
+    "title_pt": "Remover N-ésimo Nó do Fim",
+    "difficulty": "Médio",
+    "category": "Linked List",
+    "leetcode_id": 19,
+    "description": "Remova o n-ésimo nó do final da lista.",
+    "example": "1->2->3, n=2 → 1->3",
+    "solution": "def removeNthFromEnd(head, n):\n    dummy = ListNode(0)\n    dummy.next = head\n    primeiro = segundo = dummy\n    for _ in range(n + 1):\n        primeiro = primeiro.next\n    while primeiro:\n        primeiro = primeiro.next\n        segundo = segundo.next\n    segundo.next = segundo.next.next\n    return dummy.next",
+    "hints": [
+      "Dois ponteiros",
+      "Dummy node"
+    ]
+  },
+  {
+    "id": 52,
+    "title_en": "Reorder List",
+    "title_pt": "Reordenar Lista",
+    "difficulty": "Médio",
+    "category": "Linked List",
+    "leetcode_id": 143,
+    "description": "Reordene lista: L0→Ln→L1→Ln-1→...",
+    "example": "1->2->3->4 → 1->4->2->3",
+    "solution": "def reorderList(head):\n    if not head:\n        return\n    # Encontra meio\n    lento = rapido = head\n    while rapido and rapido.next:\n        lento = lento.next\n        rapido = rapido.next.next\n    # Inverte segunda metade\n    prev, curr = None, lento\n    while curr:\n        curr.next, prev, curr = prev, curr, curr.next\n    # Mescla\n    primeiro, segundo = head, prev\n    while segundo.next:\n        primeiro.next, primeiro = segundo, primeiro.next\n        segundo.next, segundo = primeiro, segundo.next",
+    "hints": [
+      "Encontre meio",
+      "Inverta",
+      "Mesclue"
+    ]
+  },
+  {
+    "id": 53,
+    "title_en": "Add Two Numbers",
+    "title_pt": "Somar Dois Números",
+    "difficulty": "Médio",
+    "category": "Linked List",
+    "leetcode_id": 2,
+    "description": "Some dois números representados por listas ligadas.",
+    "example": "[2,4,3] + [5,6,4] → [7,0,8] (342+465=807)",
+    "solution": "def addTwoNumbers(l1, l2):\n    dummy = ListNode(0)\n    atual = dummy\n    carry = 0\n    while l1 or l2 or carry:\n        v1 = l1.val if l1 else 0\n        v2 = l2.val if l2 else 0\n        carry, digito = divmod(v1 + v2 + carry, 10)\n        atual.next = ListNode(digito)\n        atual = atual.next\n        if l1: l1 = l1.next\n        if l2: l2 = l2.next\n    return dummy.next",
+    "hints": [
+      "Simule soma",
+      "Cuide do carry"
+    ]
+  },
+  {
+    "id": 54,
+    "title_en": "Set Matrix Zeroes",
+    "title_pt": "Zerar Matriz",
+    "difficulty": "Médio",
+    "category": "Matrix",
+    "leetcode_id": 73,
+    "description": "Se elemento é 0, zere toda linha e coluna.",
+    "example": "[[1,1,1],[1,0,1]] → [[1,0,1],[0,0,0]]",
+    "solution": "def setZeroes(matrix):\n    r, c = len(matrix), len(matrix[0])\n    linhas, colunas = set(), set()\n    for i in range(r):\n        for j in range(c):\n            if matrix[i][j] == 0:\n                linhas.add(i)\n                colunas.add(j)\n    for i in range(r):\n        for j in range(c):\n            if i in linhas or j in colunas:\n                matrix[i][j] = 0",
+    "hints": [
+      "Rastreie zeros",
+      "Segunda passada"
+    ]
+  },
+  {
+    "id": 55,
+    "title_en": "Spiral Matrix",
+    "title_pt": "Matriz Espiral",
+    "difficulty": "Médio",
+    "category": "Matrix",
+    "leetcode_id": 54,
+    "description": "Retorne elementos da matriz em ordem espiral.",
+    "example": "[[1,2,3],[4,5,6]] → [1,2,3,6,5,4]",
+    "solution": "def spiralOrder(matrix):\n    if not matrix:\n        return []\n    r, c = len(matrix), len(matrix[0])\n    topo, base = 0, r - 1\n    esq, dir = 0, c - 1\n    res = []\n    while topo <= base and esq <= dir:\n        for j in range(esq, dir + 1):\n            res.append(matrix[topo][j])\n        topo += 1\n        for i in range(topo, base + 1):\n            res.append(matrix[i][dir])\n        dir -= 1\n        if topo <= base:\n            for j in range(dir, esq - 1, -1):\n                res.append(matrix[base][j])\n            base -= 1\n        if esq <= dir:\n            for i in range(base, topo - 1, -1):\n                res.append(matrix[i][esq])\n            esq += 1\n    return res",
+    "hints": [
+      "Quatro bordas",
+      "Reduza após cada direção"
+    ]
+  },
+  {
+    "id": 56,
+    "title_en": "Rotate Image",
+    "title_pt": "Rotacionar Imagem",
+    "difficulty": "Médio",
+    "category": "Matrix",
+    "leetcode_id": 48,
+    "description": "Rotacione matriz n x n 90 graus no sentido horário.",
+    "example": "[[1,2],[3,4]] → [[3,1],[4,2]]",
+    "solution": "def rotate(matrix):\n    n = len(matrix)\n    # Transpor\n    for i in range(n):\n        for j in range(i, n):\n            matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]\n    # Inverter cada linha\n    for i in range(n):\n        matrix[i].reverse()",
+    "hints": [
+      "Transponha",
+      "Inverta linhas"
+    ]
+  },
+  {
+    "id": 57,
+    "title_en": "Word Search",
+    "title_pt": "Busca de Palavra",
+    "difficulty": "Médio",
+    "category": "Matrix",
+    "leetcode_id": 79,
+    "description": "Palavra existe na grade?",
+    "example": "[['A','B'],['C','D']], 'AB' → True",
+    "solution": "def exist(board, word):\n    r, c = len(board), len(board[0])\n    def dfs(i, j, k):\n        if k == len(word):\n            return True\n        if i < 0 or j < 0 or i >= r or j >= c or board[i][j] != word[k]:\n            return False\n        t, board[i][j] = board[i][j], '#'\n        res = dfs(i+1,j,k+1) or dfs(i-1,j,k+1) or dfs(i,j+1,k+1) or dfs(i,j-1,k+1)\n        board[i][j] = t\n        return res\n    for i in range(r):\n        for j in range(c):\n            if dfs(i, j, 0):\n                return True\n    return False",
+    "hints": [
+      "DFS",
+      "Marque visitados"
+    ]
+  },
+  {
+    "id": 58,
+    "title_en": "Valid Anagram",
+    "title_pt": "Anagrama Válido",
+    "difficulty": "Fácil",
+    "category": "String",
+    "leetcode_id": 242,
+    "description": "Determine se t é anagrama de s.",
+    "example": "s=anagram, t=nagaram → True",
+    "solution": "def isAnagram(s, t):\n    return sorted(s) == sorted(t)\n\ndef isAnagram_v2(s, t):\n    from collections import Counter\n    return Counter(s) == Counter(t)",
+    "hints": [
+      "Ordene e compare",
+      "Ou use Counter"
+    ]
+  },
+  {
+    "id": 59,
+    "title_en": "Group Anagrams",
+    "title_pt": "Agrupar Anagramas",
+    "difficulty": "Médio",
+    "category": "String",
+    "leetcode_id": 49,
+    "description": "Agrupe strings que são anagramas.",
+    "example": "['eat','tea','tan'] → [['eat','tea'],['tan']]",
+    "solution": "def groupAnagrams(strs):\n    from collections import defaultdict\n    d = defaultdict(list)\n    for s in strs:\n        d[''.join(sorted(s))].append(s)\n    return list(d.values())",
+    "hints": [
+      "Use chave ordenada",
+      "Hash map"
+    ]
+  },
+  {
+    "id": 60,
+    "title_en": "Valid Parentheses",
+    "title_pt": "Parênteses Válidos",
+    "difficulty": "Fácil",
+    "category": "String",
+    "leetcode_id": 20,
+    "description": "Determine se string de parênteses é válida.",
+    "example": "()[]{} → True",
+    "solution": "def isValid(s):\n    pilha = []\n    pares = {')': '(', ']': '[', '}': '{'}\n    for c in s:\n        if c in pares:\n            if not pilha or pilha.pop() != pares[c]:\n                return False\n        else:\n            pilha.append(c)\n    return len(pilha) == 0",
+    "hints": [
+      "Use pilha",
+      "Feche com correspondente"
+    ]
+  },
+  {
+    "id": 61,
+    "title_en": "Valid Palindrome",
+    "title_pt": "Palíndromo Válido",
+    "difficulty": "Fácil",
+    "category": "String",
+    "leetcode_id": 125,
+    "description": "Determine se string é palíndromo (só letras e números).",
+    "example": "A man, a plan, a canal: Panama → True",
+    "solution": "def isPalindrome(s):\n    filtrado = ''.join(c.lower() for c in s if c.isalnum())\n    return filtrado == filtrado[::-1]",
+    "hints": [
+      "Filtre caracteres",
+      "Compare com reverso"
+    ]
+  },
+  {
+    "id": 62,
+    "title_en": "Longest Substring Without Repeating Characters",
+    "title_pt": "Maior Substring Sem Repetição",
+    "difficulty": "Médio",
+    "category": "String",
+    "leetcode_id": 3,
+    "description": "Comprimento da maior substring sem caracteres repetidos.",
+    "example": "abcabcbb → 3 (abc)",
+    "solution": "def lengthOfLongestSubstring(s):\n    vistos = {}\n    inicio = max_len = 0\n    for i, c in enumerate(s):\n        if c in vistos and vistos[c] >= inicio:\n            inicio = vistos[c] + 1\n        max_len = max(max_len, i - inicio + 1)\n        vistos[c] = i\n    return max_len",
+    "hints": [
+      "Janela deslizante",
+      "Rastreie última posição"
+    ]
+  },
+  {
+    "id": 63,
+    "title_en": "Longest Repeating Character Replacement",
+    "title_pt": "Maior Repetição com Substituição",
+    "difficulty": "Médio",
+    "category": "String",
+    "leetcode_id": 424,
+    "description": "Comprimento da maior substring com mesmo caractere após k substituições.",
+    "example": "ABAB, k=2 → 4",
+    "solution": "def characterReplacement(s, k):\n    from collections import defaultdict\n    count = defaultdict(int)\n    inicio = max_freq = max_len = 0\n    for fim, c in enumerate(s):\n        count[c] += 1\n        max_freq = max(max_freq, count[c])\n        while fim - inicio + 1 - max_freq > k:\n            count[s[inicio]] -= 1\n            inicio += 1\n        max_len = max(max_len, fim - inicio + 1)\n    return max_len",
+    "hints": [
+      "Janela deslizante",
+      "Max freq dentro da janela"
+    ]
+  },
+  {
+    "id": 64,
+    "title_en": "Minimum Window Substring",
+    "title_pt": "Substring Janela Mínima",
+    "difficulty": "Difícil",
+    "category": "String",
+    "leetcode_id": 76,
+    "description": "Menor substring de s que contém todos caracteres de t.",
+    "example": "s=ADOBECODEBANC, t=ABC → BANC",
+    "solution": "def minWindow(s, t):\n    from collections import Counter\n    need = Counter(t)\n    missing = len(t)\n    inicio = fim = i = 0\n    for j, c in enumerate(s, 1):\n        missing -= need[c] > 0\n        need[c] -= 1\n        if not missing:\n            while i < j and need[s[i]] < 0:\n                need[s[i]] += 1\n                i += 1\n            if not fim or j - i <= fim - inicio:\n                inicio, fim = i, j\n    return s[inicio:fim]",
+    "hints": [
+      "Janela deslizante",
+      "Contraída quando possível"
+    ]
+  },
+  {
+    "id": 65,
+    "title_en": "Encode and Decode Strings",
+    "title_pt": "Codificar e Decodificar Strings",
+    "difficulty": "Médio",
+    "category": "String",
+    "leetcode_id": 271,
+    "description": "Codifique lista de strings para string e decodifique de volta.",
+    "example": "['lint','code'] → '4#lint4#code'",
+    "solution": "def encode(strs):\n    return ''.join(f'{len(s)}#{s}' for s in strs)\n\ndef decode(s):\n    r, i = [], 0\n    while i < len(s):\n        j = s.find('#', i)\n        length = int(s[i:j])\n        r.append(s[j+1:j+1+length])\n        i = j + 1 + length\n    return r",
+    "hints": [
+      "Prefixe com tamanho",
+      "Use delimitador"
+    ]
+  },
+  {
+    "id": 66,
+    "title_en": "Maximum Depth of Binary Tree",
+    "title_pt": "Profundidade Máxima de Árvore",
+    "difficulty": "Fácil",
+    "category": "Tree",
+    "leetcode_id": 104,
+    "description": "Profundidade máxima de árvore binária.",
+    "example": "[3,9,20,null,null,15,7] → 3",
+    "solution": "def maxDepth(root):\n    if not root:\n        return 0\n    return 1 + max(maxDepth(root.left), maxDepth(root.right))",
+    "hints": [
+      "Recursão",
+      "Max das subárvores"
+    ]
+  },
+  {
+    "id": 67,
+    "title_en": "Same Tree",
+    "title_pt": "Mesma Árvore",
+    "difficulty": "Fácil",
+    "category": "Tree",
+    "leetcode_id": 100,
+    "description": "Determine se duas árvores binárias são iguais.",
+    "example": "[1,2,3], [1,2,3] → True",
+    "solution": "def isSameTree(p, q):\n    if not p and not q:\n        return True\n    if not p or not q:\n        return False\n    return p.val == q.val and isSameTree(p.left, q.left) and isSameTree(p.right, q.right)",
+    "hints": [
+      "Recursão",
+      "Verifique valor e filhos"
+    ]
+  },
+  {
+    "id": 68,
+    "title_en": "Invert Binary Tree",
+    "title_pt": "Inverter Árvore Binária",
+    "difficulty": "Fácil",
+    "category": "Tree",
+    "leetcode_id": 226,
+    "description": "Inverta uma árvore binária.",
+    "example": "... → árvore invertida",
+    "solution": "def invertTree(root):\n    if not root:\n        return None\n    root.left, root.right = root.right, root.left\n    invertTree(root.left)\n    invertTree(root.right)\n    return root",
+    "hints": [
+      "Recursão",
+      "Troque esquerda e direita"
+    ]
+  },
+  {
+    "id": 69,
+    "title_en": "Binary Tree Maximum Path Sum",
+    "title_pt": "Soma Máxima de Caminho",
+    "difficulty": "Difícil",
+    "category": "Tree",
+    "leetcode_id": 124,
+    "description": "Máxima soma de qualquer caminho não vazio.",
+    "example": "[-10,9,20,null,null,15,7] → 42",
+    "solution": "def maxPathSum(root):\n    max_sum = float('-inf')\n    def dfs(node):\n        nonlocal max_sum\n        if not node:\n            return 0\n        left = max(dfs(node.left), 0)\n        right = max(dfs(node.right), 0)\n        max_sum = max(max_sum, left + right + node.val)\n        return node.val + max(left, right)\n    dfs(root)\n    return max_sum",
+    "hints": [
+      "DFS",
+      "Caminho passando por nó vs caminho terminando em nó"
+    ]
+  },
+  {
+    "id": 70,
+    "title_en": "Binary Tree Level Order Traversal",
+    "title_pt": "Percurso por Nível",
+    "difficulty": "Médio",
+    "category": "Tree",
+    "leetcode_id": 102,
+    "description": "Retorne percurso por nível da árvore.",
+    "example": "[3,9,20,null,null,15,7] → [[3],[9,20],[15,7]]",
+    "solution": "def levelOrder(root):\n    if not root:\n        return []\n    from collections import deque\n    q, r = deque([root]), []\n    while q:\n        nivel = []\n        for _ in range(len(q)):\n            n = q.popleft()\n            nivel.append(n.val)\n            if n.left: q.append(n.left)\n            if n.right: q.append(n.right)\n        r.append(nivel)\n    return r",
+    "hints": [
+      "BFS",
+      "Use fila"
+    ]
+  },
+  {
+    "id": 71,
+    "title_en": "Serialize and Deserialize Binary Tree",
+    "title_pt": "Serializar e Desserializar",
+    "difficulty": "Difícil",
+    "category": "Tree",
+    "leetcode_id": 297,
+    "description": "Converta árvore para string e vice-versa.",
+    "example": "... → string → ...",
+    "solution": "class Codec:\n    def serialize(self, root):\n        def dfs(node):\n            return [str(node.val)] + dfs(node.left) + dfs(node.right) if node else ['N']\n        return ','.join(dfs(root))\n    def deserialize(self, data):\n        vals = iter(data.split(','))\n        def dfs():\n            v = next(vals)\n            return TreeNode(int(v), dfs(), dfs()) if v != 'N' else None\n        return dfs()",
+    "hints": [
+      "Pré-ordem",
+      "Marque nulos"
+    ]
+  },
+  {
+    "id": 72,
+    "title_en": "Subtree of Another Tree",
+    "title_pt": "Subárvore de Outra",
+    "difficulty": "Fácil",
+    "category": "Tree",
+    "leetcode_id": 572,
+    "description": "Determine se subRoot é subárvore de root.",
+    "example": "[3,4,5,1,2], [4,1,2] → True",
+    "solution": "def isSubtree(root, subRoot):\n    if not subRoot:\n        return True\n    if not root:\n        return False\n    def isSame(p, q):\n        if not p and not q:\n            return True\n        if not p or not q:\n            return False\n        return p.val == q.val and isSame(p.left, q.left) and isSame(p.right, q.right)\n    return isSame(root, subRoot) or isSubtree(root.left, subRoot) or isSubtree(root.right, subRoot)",
+    "hints": [
+      "Verifique igualdade",
+      "Ou busque nas subárvores"
+    ]
+  },
+  {
+    "id": 73,
+    "title_en": "Construct Binary Tree from Preorder and Inorder",
+    "title_pt": "Construir Árvore de Pré-ordem e Em-ordem",
+    "difficulty": "Médio",
+    "category": "Tree",
+    "leetcode_id": 105,
+    "description": "Construa árvore a partir de traversals.",
+    "example": "preorder=[3,9,20], inorder=[9,3,20] → [3,9,20]",
+    "solution": "def buildTree(preorder, inorder):\n    if inorder:\n        idx = inorder.index(preorder.pop(0))\n        root = TreeNode(inorder[idx])\n        root.left = buildTree(preorder, inorder[:idx])\n        root.right = buildTree(preorder, inorder[idx+1:])\n        return root",
+    "hints": [
+      "Raiz é primeiro em pré-ordem",
+      "Separe em-ordem"
+    ]
+  },
+  {
+    "id": 74,
+    "title_en": "Validate Binary Search Tree",
+    "title_pt": "Validar Árvore de Busca",
+    "difficulty": "Médio",
+    "category": "Tree",
+    "leetcode_id": 98,
+    "description": "Determine se árvore é BST válida.",
+    "example": "[2,1,3] → True",
+    "solution": "def isValidBST(root):\n    def dfs(node, low, high):\n        if not node:\n            return True\n        if not low < node.val < high:\n            return False\n        return dfs(node.left, low, node.val) and dfs(node.right, node.val, high)\n    return dfs(root, float('-inf'), float('inf'))",
+    "hints": [
+      "DFS com range",
+      "Verifique limites"
+    ]
+  },
+  {
+    "id": 75,
+    "title_en": "Kth Smallest Element in a BST",
+    "title_pt": "K-ésimo Menor Elemento",
+    "difficulty": "Médio",
+    "category": "Tree",
+    "leetcode_id": 230,
+    "description": "Encontre k-ésimo menor elemento em BST.",
+    "example": "[3,1,4,null,2], k=1 → 1",
+    "solution": "def kthSmallest(root, k):\n    def inorder(node):\n        return inorder(node.left) + [node.val] + inorder(node.right) if node else []\n    return inorder(root)[k-1]\n\ndef kthSmallest_rapido(root, k):\n    stack = []\n    while True:\n        while root:\n            stack.append(root)\n            root = root.left\n        root = stack.pop()\n        k -= 1\n        if k == 0:\n            return root.val\n        root = root.right",
+    "hints": [
+      "Em-ordem dá ordem crescente",
+      "Ou use pilha para O(h) espaço"
+    ]
+  }
+]
